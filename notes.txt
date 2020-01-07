@@ -1,0 +1,5 @@
+Setting Up E-commerce Project
+-----------------------------
+& in scass means it wants to append additional selector to class above it.
+scass makes it easy to nest css within blocks
+
