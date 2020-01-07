@@ -1,20 +1,14 @@
 import React from 'react';
 import './homepage.styles.scss'
 
+import Directory from  '../../components/directory/directory.component'
 
 const HomePage = () => (
     <div className="homepage">
-        <div className="directory-menu">
-            <div className ='menu-item'>
-                <div className = 'content'>
-                    <h1 className='title'> 
-                        HATS
-                        </h1>
-                        <span className='subtitle'>
-                            SHOP NOW 
-                        </span>
-                </div>
-            </div>
+       {/* all of the code below we put it in our direcotry component */}
+        <Directory />
+        {/* <div className="directory-menu">
+     
             <div className ='menu-item'>
                 <div className = 'content'>
                     <h1 className='title'> 
@@ -54,7 +48,7 @@ const HomePage = () => (
                         </span>
                 </div>
             </div>   
-        </div>
+        </div> */}
     </div>
 )
 
