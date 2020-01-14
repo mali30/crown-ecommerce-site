@@ -1,5 +1,58 @@
 Setting Up E-commerce Project
 -----------------------------
+
+What I did today for this section
+1. Created a new react-app called crown-ecommerce
+2. Had all code in homepage.component but then seperated into different components.
+3. Have a page folder which has static components
+4. Components folder has all my components
+5. Each component has a .sass style which is just css but cooler I guess
+
 & in scass means it wants to append additional selector to class above it.
 scass makes it easy to nest css within blocks
 
+
+Routing in React
+-------------------
+We are Using React Router DOM 
+
+running into conflicts -
+ 1. add resolutions : {
+     "babel-jest" : "24.7.1"
+ }
+
+ BrowseRouter gives the functionality of routing. 
+ Look at the index.js
+
+ In your class which you want routing add the following import 
+ import {Route} from 'react-router-dom'
+
+
+ <Route exact {true or false} path = "/" component = {} />
+
+exact - must be at the same path in url in order to render the specified component 
+ Look into Switch. Didn't understand really.
+
+ Switch gives you more control.
+
+ In react-router-dom, any component that gets rendered in the route,
+ gets passed 3 arguments. If you do a console.log(props) you will see 
+ history,location,match
+
+ params is an object passed into url
+ we can access using this below
+ {props.match.params.topicId}
+
+ Link component in react-router-dom:
+ lets us dynamically pass in in links like a <a> link 
+ <Link to="/"> Home Page </Link>
+
+ using history prop to go to a page
+<button onClick = { () => props.history.push('/page')}> To Pages </button>
+
+location prop tells us where we are current ly
+
+Look into prop tunneling aka prop drilling
+
+withRouter - a higher order component. 
+Takes a component as argument and returns modified component,

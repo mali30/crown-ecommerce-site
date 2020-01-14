@@ -55,10 +55,12 @@ class Directory extends React.Component{
             section.id section.image section.blah */}
             {
                 this.state.section.map
-                ( ({title, imageUrl, id , size }) => 
-                (
-                <MenuItem key={id} title = {title}  image={imageUrl} size={size} />)
-                )
+                // gonna refacor this line to more ES6 style
+                // ( ({title, imageUrl, id , size }) => 
+                (( { id, ...everythingElse} ) => 
+                // (<MenuItem key={id} title = {title}  image={imageUrl} size={size} />))
+                (<MenuItem key={id} {...everythingElse}/>))
+
             
             }
             </div>
