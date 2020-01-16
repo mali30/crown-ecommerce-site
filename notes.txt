@@ -56,3 +56,5 @@ Look into prop tunneling aka prop drilling
 
 withRouter - a higher order component. 
 Takes a component as argument and returns modified component,
+
+added 
