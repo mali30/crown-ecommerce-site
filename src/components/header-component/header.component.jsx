@@ -11,7 +11,7 @@ const Header = () => (
             <Logo className='logo-container' />
         </Link>
         <div className='options'>
-            <Link to="/shop" className='option' SHOP > SHOP </Link>
+            <Link to="/shop" className='option'  > SHOP </Link>
             <Link to="/shop" className='option'>CONTACT </Link>
         
         

@@ -2,3 +2,10 @@ body{
     font-family: 'Open Sans Condensed';
     padding: 20px 60px
 }
+
+/* target a tag so links are not purple */
+
+a{
+    text-decoration: none;
+    color:black;
+}

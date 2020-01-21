@@ -4,7 +4,8 @@ import {Route,Link} from 'react-router-dom'
 import {Switch} from 'react-router-dom'
 import HomePage from './pages/homepage/homepage.component'
 import ShopPage from './pages/shop/shop.component'
-
+import Header from './components/header-component/header.component'
+import SignInAndSignUpPage from './pages/sign-in-sign-up/sign-in-sign-up.component'
 // const routingExampe = (props) => {
 //   console.log(props)
 //  return (
@@ -45,13 +46,16 @@ function App() {
     <div>
     {/* <HomePage />  */}
 
+    {/* will be on each page */}
+    <Header />
     <Switch >
-    
+
     <Route exact path = '/' component={HomePage} />
     {/* <Route  path = '/shop/hats' component={hatsPage} />
     <Route  path="/topics/:topicId" component = {topicsPage} /> */}
     <Route path="/shop" component = {ShopPage} />
- 
+    <Route path="/signin" component = {SignInAndSignUpPage} />
+    
     </Switch>
  
 

@@ -4,6 +4,10 @@ import './collection-preview-styles.scss'
 
 import CollectionItem from '../collection-item/collection-item.component'
 
+/*
+    This component shows the first four clothing items on each page and then passes those 
+    items to the CollectionItem component
+*/
 const CollectionPreview = ({title, items}) => (
 
    
